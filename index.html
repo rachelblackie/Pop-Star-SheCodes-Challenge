@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://kit.fontawesome.com/37cb327586.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --dark-pink: #d7568c;
+      --light-pink: #ec9a9d;
+      --charcoal: #212529;
+      --headings-font: Lobster;
+      --main-font: Poppins;
+    }
+    h1 {
+      font-family: var(--headings-font);
+      color: var(--charcoal);
+    }
+    p {
+      font-family: var(--main-font);
+      color: var(--charcoal);
+    }
+    .hero {
+      padding-top: 56px;
+    }
+    .nav-item a {
+      font-family: var(--main-font);
+      color: white;
+    }
+    .bg-body-tertiary {
+      background-color: var(--light-pink);
+    }
+    .social-media-links a {
+      color: var(--light-pink);
+    }
+    .social-media-links a:hover {
+      color: var(--charcoal);
+    }
+    .dolly-bw {
+      max-height: 525px;
+      max-width: 100%;
+    }
+    .dropdown-menu a {
+      color: var(--light-pink);
+    }
+  </style>
+  <title>Dolly Parton</title>
+  <link
+    rel="icon"
+    href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/626/original/butterfly-icon.png?1678350813"
+    type="image/x-icon"
+  />
+</head>
+<body>
+  <nav
+    class="navbar navbar-expand fixed-top bg-body-tertiary"
+    data-bs-theme="dark"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/533/original/logo-pink.png?1678277799"
+          alt="logo"
+          height="24"
+          class="d-inline-block align-text-top"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="https://www.youtube.com/channel/UCuGuRQHrvoNsD-AolV0X39g"
+              target="_blank"
+              >Music</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://dollyparton.com/life-and-career/books"
+              target="_blank"
+            >
+              Books</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://imaginationlibrary.com/"
+              target="_blank"
+              >Imagination Library</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://dollyparton.com/latest-news"
+                  target="_blank"
+                  >Latest News</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://dollyparton.com/family_destinations"
+                  target="_blank"
+                  >Family Destinations</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://shop.dollyparton.com/"
+                  target="_blank"
+                  >Shop</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row hero">
+    <div class="col-6">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/528/original/young-dolly.jpg?1678276030"
+        class="dolly-bw"
+      />
+    </div>
+    <div class="col-6 my-auto text-center">
+      <h1>Dolly Parton</h1>
+      <p>basic biographical info or quote here</p>
+      <video
+        src="https://www.youtube.com/watch?v=GFPlF6rXnik"
+        controls
+        autoplay
+      ></video>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-media-links text-center">
+      <a
+        href="https://www.facebook.com/DollyParton"
+        target="_blank"
+        class="mx-1"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/dollyparton/"
+        target="_blank"
+        class="mx-1"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://twitter.com/DollyParton" target="_blank" class="mx-1"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/channel/UCuGuRQHrvoNsD-AolV0X39g"
+        target="blank"
+        class="mx-1"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+    </div>
+  </footer>
+</body>
