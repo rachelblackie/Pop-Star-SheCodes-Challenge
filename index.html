@@ -48,19 +48,13 @@
     .bg-body-tertiary {
       background-color: var(--light-pink);
     }
-
-    .social-media-links a,
-    .d-r-links a,
-    .all-music-links a {
+    .social-media-links a {
       color: var(--light-pink);
       font-size: 30px;
     }
-    .social-media-links a:hover,
-    .d-r-links a:hover,
-    .all-music-links a:hover {
+    .social-media-links a:hover {
       color: var(--charcoal);
     }
-
     .dropdown-menu a {
       color: var(--light-pink);
     }
@@ -72,9 +66,7 @@
       background-color: var(--charcoal);
       color: white;
     }
-    .music-image,
-    .book-image,
-    .imagination-library-image {
+    .site-image {
       max-height: 300px;
     }
   </style>
@@ -137,9 +129,7 @@
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="#dollywood" target="_blank"
-                  >Dollywood</a
-                >
+                <a class="dropdown-item" href="#dollywood">Dollywood</a>
               </li>
             </ul>
           </li>
@@ -148,10 +138,12 @@
     </div>
   </nav>
   <div class="row hero">
-    <div class="col-7 my-auto text-center">
+    <div class="col-6 my-auto text-center">
       <h1>Dolly Parton</h1>
-      <p><em>"It's hard to be a diamond in a rhinestone world"</em></p>
       <p>
+        <em>"It's hard to be a diamond in a rhinestone world"</em>
+      </p>
+      <p class="mx-4">
         Dolly Parton is an American singer-songwriter, actress, philanthropist,
         and businesswoman, known primarily for her decades-long career in
         country music. With a career spanning over fifty years, Parton has been
@@ -159,7 +151,7 @@
         records worldwide, making her one of the best-selling female artists of
         all time.
       </p>
-      <p>
+      <p class="mx-4">
         Outside of her work in the music industry, she also co-owns The
         Dollywood Company, which manages a number of entertainment venues,
         including the Dollywood theme park, the Splash Country water park, and a
@@ -170,10 +162,10 @@
         East Tennessee where she grew up.
       </p>
     </div>
-    <div class="col-5 my-auto">
+    <div class="col-6">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/355/original/young-dolly-2.PNG?1678700086"
-        class="img-fluid dolly-bw"
+        class="img-fluid rounded"
       />
     </div>
   </div>
@@ -183,12 +175,12 @@
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/351/original/diamonds-rhinestones.jpg?1678690467"
         alt="Diamonds and Rhinestones Greatest Hits Album"
-        class="img-fluid music-image"
+        class="img-fluid rounded site-image"
       />
     </div>
     <div class="col-8">
       <h2>Music</h2>
-      <p>
+      <p class="me-4">
         Released Nov. 18, 2022. A career-spanning, cross-label anthology
         featuring 23 essential recordings from 1971-2020 for the first time on
         one album. Diamonds & Rhinestones: The Greatest Hits Collection includes
@@ -196,10 +188,10 @@
         her 2020 autobiography,
         <em>Dolly Parton, Songteller: My Life in Lyrics</em>.
       </p>
-      <div class="diamonds-rhinestones">
+      <div>
         <p>
           Listen to Diamonds & Rhinestones:
-          <span class="d-r-links text-center">
+          <span class="social-media-links text-center">
             <a
               href="https://open.spotify.com/album/70lmOB30JYEBL0tXNfAlA6?si=QnAQvLe7SaaI6_F0dW9DIA"
               target="_blank"
@@ -215,10 +207,10 @@
           </span>
         </p>
       </div>
-      <div class="all-music">
+      <div>
         <p>
           Listen to full catalogue:
-          <span class="all-music-links align-middle">
+          <span class="social-media-links align-middle">
             <a
               href="https://open.spotify.com/artist/32vWCbZh0xZ4o9gkz4PsEU?si=mjodZshGTJaV-QolZ8OgWQ"
               target="_blank"
@@ -248,12 +240,12 @@
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/349/original/billy-the-kid.jfif?1678687966"
         alt="Billy The Kid book cover"
-        class="img-fluid book-image"
+        class="img-fluid rounded site-image"
       />
     </div>
     <div class="col-8">
       <h2>Books</h2>
-      <p>
+      <p class="me-4">
         Dolly Parton will publish a new picture book about her god-dog, Billy
         the Kid, releasing on April 25, 2023 with Penguin Workshop, an imprint
         of Penguin Young Readers. Aimed at readers ages 4-7, Dolly Parton’s
@@ -287,12 +279,12 @@
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/350/original/imagination-library.png?1678688092"
         alt="Imagination Library logo"
-        class="img-fluid imagination-library-image"
+        class="img-fluid rounded site-image"
       />
     </div>
     <div class="col-8">
       <h2>Imagination Library</h2>
-      <p>
+      <p class="me-4">
         Dolly Parton’s Imagination Library is dedicated to inspiring a love of
         reading by gifting books free of charge to children from birth to age
         five, through funding shared by Dolly Parton and local community
@@ -345,13 +337,13 @@
     <div class="col-4 text-center">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/375/original/dollywood.jpg?1678702402"
-        class="img-fluid"
+        class="img-fluid rounded site-image"
         alt="Dollywood logo"
       />
     </div>
     <div class="col-8">
       <h2>Dollywood</h2>
-      <p>
+      <p class="me-4">
         Dollywood is a theme park jointly owned by entertainer Dolly Parton and
         Herschend Family Entertainment. It is located in the Knoxville
         metropolitan area in Pigeon Forge, Tennessee, near the gateway to The
@@ -403,9 +395,9 @@
 
   <hr class="my-4" />
   <div class="row">
-    <div class="col-6">
-      <p class="text-center mb-0">Follow Dolly</p>
-      <div class="social-media-links text-center mb-5">
+    <div class="col-6 text-center">
+      <p class="mb-0">Follow Dolly</p>
+      <div class="social-media-links mb-5">
         <a
           href="https://www.facebook.com/DollyParton"
           target="_blank"
