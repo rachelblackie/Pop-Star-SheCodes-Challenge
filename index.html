@@ -29,7 +29,8 @@
       --headings-font: Lobster;
       --main-font: Poppins;
     }
-    h1 {
+    h1,
+    h2 {
       font-family: var(--headings-font);
       color: var(--charcoal);
     }
@@ -47,18 +48,34 @@
     .bg-body-tertiary {
       background-color: var(--light-pink);
     }
-    .social-media-links a {
+
+    .social-media-links a,
+    .d-r-links a,
+    .all-music-links a {
       color: var(--light-pink);
+      font-size: 30px;
     }
-    .social-media-links a:hover {
+    .social-media-links a:hover,
+    .d-r-links a:hover,
+    .all-music-links a:hover {
       color: var(--charcoal);
     }
-    .dolly-bw {
-      max-height: 525px;
-      max-width: 100%;
-    }
+
     .dropdown-menu a {
       color: var(--light-pink);
+    }
+    .learn-button {
+      background-color: var(--light-pink);
+      color: white;
+    }
+    .learn-button:hover {
+      background-color: var(--charcoal);
+      color: white;
+    }
+    .music-image,
+    .book-image,
+    .imagination-library-image {
+      max-height: 300px;
     }
   </style>
   <title>Dolly Parton</title>
@@ -95,31 +112,14 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="https://www.youtube.com/channel/UCuGuRQHrvoNsD-AolV0X39g"
-              target="_blank"
+            <a class="nav-link active" aria-current="page" href="#music"
               >Music</a
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://dollyparton.com/life-and-career/books"
-              target="_blank"
-            >
-              Books</a
-            >
+            <a class="nav-link" href="#books"> Books</a>
           </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://imaginationlibrary.com/"
-              target="_blank"
-              >Imagination Library</a
-            >
-          </li>
+
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -132,27 +132,13 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dollyparton.com/latest-news"
-                  target="_blank"
-                  >Latest News</a
+                <a class="dropdown-item" href="#imagination-library"
+                  >Imagination Library</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dollyparton.com/family_destinations"
-                  target="_blank"
-                  >Family Destinations</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://shop.dollyparton.com/"
-                  target="_blank"
-                  >Shop</a
+                <a class="dropdown-item" href="#dollywood" target="_blank"
+                  >Dollywood</a
                 >
               </li>
             </ul>
@@ -162,46 +148,307 @@
     </div>
   </nav>
   <div class="row hero">
-    <div class="col-6">
+    <div class="col-7 my-auto text-center">
+      <h1>Dolly Parton</h1>
+      <p><em>"It's hard to be a diamond in a rhinestone world"</em></p>
+      <p>
+        Dolly Parton is an American singer-songwriter, actress, philanthropist,
+        and businesswoman, known primarily for her decades-long career in
+        country music. With a career spanning over fifty years, Parton has been
+        described as a "country music legend" and has sold more than 100 million
+        records worldwide, making her one of the best-selling female artists of
+        all time.
+      </p>
+      <p>
+        Outside of her work in the music industry, she also co-owns The
+        Dollywood Company, which manages a number of entertainment venues,
+        including the Dollywood theme park, the Splash Country water park, and a
+        number of dinner theatre venues including The Dolly Parton Stampede and
+        Pirates Voyage. She has founded a number of charitable and philanthropic
+        organizations, chief among which is the Dollywood Foundation, which
+        manages a number of projects to bring education and poverty relief to
+        East Tennessee where she grew up.
+      </p>
+    </div>
+    <div class="col-5 my-auto">
       <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/528/original/young-dolly.jpg?1678276030"
-        class="dolly-bw"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/355/original/young-dolly-2.PNG?1678700086"
+        class="img-fluid dolly-bw"
       />
     </div>
-    <div class="col-6 my-auto text-center">
-      <h1>Dolly Parton</h1>
-      <p>basic biographical info or quote here</p>
-      <video
-        src="https://www.youtube.com/watch?v=GFPlF6rXnik"
-        controls
-        autoplay
-      ></video>
+  </div>
+  <hr class="my-4" id="music" />
+  <div class="row">
+    <div class="col-4 text-center">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/351/original/diamonds-rhinestones.jpg?1678690467"
+        alt="Diamonds and Rhinestones Greatest Hits Album"
+        class="img-fluid music-image"
+      />
+    </div>
+    <div class="col-8">
+      <h2>Music</h2>
+      <p>
+        Released Nov. 18, 2022. A career-spanning, cross-label anthology
+        featuring 23 essential recordings from 1971-2020 for the first time on
+        one album. Diamonds & Rhinestones: The Greatest Hits Collection includes
+        liner notes penned by Robert K. Oermann, who collaborated with Dolly on
+        her 2020 autobiography,
+        <em>Dolly Parton, Songteller: My Life in Lyrics</em>.
+      </p>
+      <div class="diamonds-rhinestones">
+        <p>
+          Listen to Diamonds & Rhinestones:
+          <span class="d-r-links text-center">
+            <a
+              href="https://open.spotify.com/album/70lmOB30JYEBL0tXNfAlA6?si=QnAQvLe7SaaI6_F0dW9DIA"
+              target="_blank"
+              class="mx-1"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/watch?v=l7LGZRfASuw&list=PLnkt0vFXIkALHRsCd49e8O2CfVU_m6iXs"
+              target="_blank"
+              class="mx-1"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </span>
+        </p>
+      </div>
+      <div class="all-music">
+        <p>
+          Listen to full catalogue:
+          <span class="all-music-links align-middle">
+            <a
+              href="https://open.spotify.com/artist/32vWCbZh0xZ4o9gkz4PsEU?si=mjodZshGTJaV-QolZ8OgWQ"
+              target="_blank"
+              class="mx-1"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCuGuRQHrvoNsD-AolV0X39g"
+              target="_blank"
+              class="mx-1"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </span>
+        </p>
+        <a
+          href="https://dollyparton.com/life-and-career/music"
+          target="_blank"
+          class="btn btn-lg learn-button"
+          >Learn More</a
+        >
+      </div>
+    </div>
+  </div>
+  <hr class="my-4" id="books" />
+  <div class="row">
+    <div class="col-4 text-center">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/349/original/billy-the-kid.jfif?1678687966"
+        alt="Billy The Kid book cover"
+        class="img-fluid book-image"
+      />
+    </div>
+    <div class="col-8">
+      <h2>Books</h2>
+      <p>
+        Dolly Parton will publish a new picture book about her god-dog, Billy
+        the Kid, releasing on April 25, 2023 with Penguin Workshop, an imprint
+        of Penguin Young Readers. Aimed at readers ages 4-7, Dolly Parton’s
+        Billy the Kid Makes it Big features illustrations by MacKenzie Haley and
+        tells the story of Billy the Kid, a dog who loves barking to the beat of
+        country music and sets out to make it big as a country music star in
+        Nashville. But when he encounters some bullies at the Battle of the
+        Bow-wows, he must call on his favorite songs, and the help of some new
+        friends, to regain his self-confidence and be the star he always knew he
+        could be.
+      </p>
+      <p>
+        Check out more of Dolly's books:
+        <span class="social-media-links align-middle">
+          <a href="https://www.goodreads.com/author/show/144067.Dolly_Parton"
+            ><i class="fa-brands fa-goodreads"></i
+          ></a>
+        </span>
+      </p>
+      <a
+        href="https://dollyparton.com/life-and-career/books"
+        target="_blank"
+        class="btn btn-lg learn-button"
+        >Learn More</a
+      >
+    </div>
+  </div>
+  <hr class="my-4" id="imagination-library" />
+  <div class="row">
+    <div class="col-4 text-center">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/350/original/imagination-library.png?1678688092"
+        alt="Imagination Library logo"
+        class="img-fluid imagination-library-image"
+      />
+    </div>
+    <div class="col-8">
+      <h2>Imagination Library</h2>
+      <p>
+        Dolly Parton’s Imagination Library is dedicated to inspiring a love of
+        reading by gifting books free of charge to children from birth to age
+        five, through funding shared by Dolly Parton and local community
+        partners in the United States, Canada, United Kingdom, Australia and
+        Republic of Ireland. Inspired by her father’s inability to read and
+        write Dolly started her Imagination Library in 1995 for the children
+        within her home county. Today, her program spans five countries and
+        gifts over 2 million free books each month to children around the world.
+      </p>
+      <p>
+        Follow the Imagination Library:
+        <span class="social-media-links align-middle">
+          <a
+            href="https://www.facebook.com/dollysimaginationlibrary"
+            target="_blank"
+            class="mx-1"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/imaginationlibrary/"
+            target="_blank"
+            class="mx-1"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@imaginationlibrary"
+            target="_blank"
+            class="mx-1"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a
+            href="https://twitter.com/dollyslibrary"
+            target="_blank"
+            class="mx-1"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </span>
+      </p>
+
+      <a
+        href="https://imaginationlibrary.com/"
+        class="btn btn-lg learn-button"
+        target="_blank"
+        >Learn More</a
+      >
+    </div>
+  </div>
+  <hr class="my-4" id="dollywood" />
+  <div class="row">
+    <div class="col-4 text-center">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/375/original/dollywood.jpg?1678702402"
+        class="img-fluid"
+        alt="Dollywood logo"
+      />
+    </div>
+    <div class="col-8">
+      <h2>Dollywood</h2>
+      <p>
+        Dollywood is a theme park jointly owned by entertainer Dolly Parton and
+        Herschend Family Entertainment. It is located in the Knoxville
+        metropolitan area in Pigeon Forge, Tennessee, near the gateway to The
+        Great Smoky Mountains. It has won many international awards. In addition
+        to standard amusement park thrill rides, Dollywood features traditional
+        crafts and music of the Smoky Mountain area. The park hosts a number of
+        concerts and musical events each year, including appearances by Dolly
+        Parton and her family as well as other national and local musical acts.
+        The theme park is the anchor of Parton's Dollywood amusement
+        destination, which also includes the water park Dollywood's Splash
+        Country, Dollywood's DreamMore Resort and Spa, and Dolly Parton's
+        Stampede Dinner Attraction.
+      </p>
+      <p>
+        Follow Dollywood:
+        <span class="social-media-links align-middle">
+          <a
+            href="https://www.facebook.com/dollywood"
+            target="_blank"
+            class="mx-1"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/dollywood/"
+            target="_blank"
+            class="mx-1"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/dollywood" target="_blank" class="mx-1"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCq9QhpqEXcsvp6ZC9LK7j_g"
+            target="_blank"
+            class="mx-1"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </span>
+      </p>
+
+      <a
+        href="https://www.dollywood.com/"
+        class="btn btn-lg learn-button"
+        target="_blank"
+        >Learn More</a
+      >
     </div>
   </div>
 
-  <footer>
-    <div class="social-media-links text-center">
-      <a
-        href="https://www.facebook.com/DollyParton"
-        target="_blank"
-        class="mx-1"
-        ><i class="fa-brands fa-facebook"></i
-      ></a>
-      <a
-        href="https://www.instagram.com/dollyparton/"
-        target="_blank"
-        class="mx-1"
-        ><i class="fa-brands fa-instagram"></i
-      ></a>
-      <a href="https://twitter.com/DollyParton" target="_blank" class="mx-1"
-        ><i class="fa-brands fa-twitter"></i
-      ></a>
-      <a
-        href="https://www.youtube.com/channel/UCuGuRQHrvoNsD-AolV0X39g"
-        target="blank"
-        class="mx-1"
-        ><i class="fa-brands fa-youtube"></i
-      ></a>
+  <hr class="my-4" />
+  <div class="row">
+    <div class="col-6">
+      <p class="text-center mb-0">Follow Dolly</p>
+      <div class="social-media-links text-center mb-5">
+        <a
+          href="https://www.facebook.com/DollyParton"
+          target="_blank"
+          class="mx-1"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/dollyparton/"
+          target="_blank"
+          class="mx-1"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://open.spotify.com/artist/32vWCbZh0xZ4o9gkz4PsEU?si=KKOEf3aeRLSVMEnbMo_0oA"
+          target="_blank"
+          class="mx-1"
+          ><i class="fa-brands fa-spotify"></i
+        ></a>
+
+        <a href="https://twitter.com/DollyParton" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCuGuRQHrvoNsD-AolV0X39g"
+          target="blank"
+          class="mx-1"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
     </div>
-  </footer>
+    <div class="col-6 text-center">
+      <p class="mb-0">Coded by Rachel Blackie</p>
+      <div class="social-media-links">
+        <a href="https://github.com/rachelblackie" target="blank" class="mx-1">
+          <i class="fa-brands fa-github"></i></a
+        ><a
+          href="https://www.linkedin.com/in/rachel-blackie-273b18127/"
+          target="blank"
+          class="mx-1"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+  <script></script>
 </body>
